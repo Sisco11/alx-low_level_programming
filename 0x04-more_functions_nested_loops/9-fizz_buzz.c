@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - program that prints the numbers from 1 to 100
@@ -6,23 +6,26 @@
  * and for the multiples of five print Buzz
  * Return: 0.
  */
-
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = 1; num <= 100; num++)
+	i = 1;
+	printf("%d", i);
+	for (i = 2; i <= 100; ++i)
 	{
-		if (num % 3 == 0 && num % 5 == 0)
-			printf("FizzBuzz ");
-		else if (num % 3 == 0 && num % 5 != 0)
-			printf("Fizz ");
-		else if (num == 100)
-			printf("Buzz");
-		else if (num % 5 == 0 && num % 3 != 0)
-			printf("Buzz ");
+		printf(" ");
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			if (i % 3 == 0)
+				printf("Fizz");
+			if (i % 5 == 0)
+				printf("Buzz");
+		}
 		else
-			printf("%d ", num);
+		{
+			printf("%d", i);
+		}
 	}
 	printf("\n");
 	return (0);
