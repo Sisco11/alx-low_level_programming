@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 #include <limits.h>
 #include "main.h"
 
