@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * puts_half - print the last half of a string
