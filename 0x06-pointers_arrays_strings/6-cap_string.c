@@ -10,7 +10,7 @@
  *
  * Return: the resultant string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i;
 
@@ -19,7 +19,7 @@ char *cap_string(char *str)
 		str[i] -= 32;
 	for (i = 1; str[i] != '\0'; ++i)
 	{
-		if (is_separator(str[i - 1]))
+		if (isseparator(str[i - 1]))
 			if (str[i] >= 97 && str[i] <= 122)
 				str[i] -= 32;
 	}
